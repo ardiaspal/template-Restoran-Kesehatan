@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Menu</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+</head>
+<body>
+	<div id="over-bc"></div>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+		<a href="menu.html"><i class="fa fa-cutlery" aria-hidden="true"></i> Menu</a>
+		<a href="artikel.html"><i class="fa fa-bookmark" aria-hidden="true"></i> Artikel</a>
+		<a href="tentang.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Tentang Kami</a>
+	</div>
+	<div class="grup-header">
+		<div class="bacground-image-cover"></div>
+		<div class="bg-cover-color"></div>
+		<!-- navbar -->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">Healthy <i class="fa fa-spoon" aria-hidden="true"></i>ooD Resto</a>
+				<ul class="nav navbar-nav">
+					<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+					<li><a href="menu.html"><i class="fa fa-cutlery" aria-hidden="true"></i> Menu</a></li>
+					<li><a href="artikel.html"><i class="fa fa-bookmark" aria-hidden="true"></i> Artikel</a></li>
+					<li><a href="tentang.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Tentang Kami</a></li> 
+				</ul>
+			</div>
+		</nav>
+		<div class="grup-navbar-side">
+			<a class="navbar-brand" href="index.html">Healthy <i class="fa fa-spoon" aria-hidden="true"></i>ooD Resto</a>
+			<span id="navigasi-sidebar-v2" style="display:none;font-size:30px;cursor:pointer;position: absolute;color: white;right: 0;display: none;" onclick="openNav()">&#9776;</span>
+		</div>
+		<!-- end navbar -->
+		<div class="grup-text-head">
+			<span id="navigasi-sidebar" style="font-size:30px;cursor:pointer;position: absolute;color: white;right: 0;display: none;" onclick="openNav()">&#9776;</span>
+			<h6>Pilih Makanan yang anda Mau</h6>
+			<h1>Healthy <i class="fa fa-spoon" aria-hidden="true"></i>ooD Resto</h1>
+		</div>
+		<div class="grup-head-menu">
+			<h1 style="font-size: 36px;
+			font-weight: 600;font-family: Poppins;"><i class="fa fa-cutlery" aria-hidden="true"></i> Menu</h1>
+			<h5 style="font-family: Poppins;"><a href="index.html" style="color: white;font-weight: 300;
+			font-size: 14px text-decoration: none;">Home</a> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> <a style="color: white; text-decoration: none;font-weight: 300;
+			font-size: 14px" href="menu.html">Menu</a></h5>
+		</div>
+	</div>
+
+	<div class="grup-promo-menu">
+		<h1>Health Promotion</h1>
+		<p>Untuk Meningkatkan Kesehatan mu, kami memberikan promo untuk beberapa makanan.</p>
+		<div class="col-sm-12 col-md-6">
+			<div class="blog-card">
+				<div class="meta">
+					<div class="photo" style="background-image: url('images/natal.jpg')"></div>
+					<ul class="details">
+						<h3>Diskon 30%</h3>
+					</ul>
+				</div>
+				<div class="description">
+					<h1>Promo Makanan Special</h1>
+					<h2>Natal</h2>
+					<p>Dalam memperingati hari Natal Healthy <i class="fa fa-spoon" aria-hidden="true"></i>ooD Resto memberikan diskon pembelian 30% untuk menu Special</p>
+					<p class="read-more">
+						<a href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-12 col-md-6">
+			<div class="blog-card">
+				<div class="meta">
+					<div class="photo" style="background-image: url('images/kos.jpg')"></div>
+					<ul class="details">
+						<h3>Diskon 25%</h3>
+					</ul>
+				</div>
+				<div class="description">
+					<h1>Promo Breakfast</h1>
+					<h2>Harian</h2>
+					<p>Promo Tiap hari hanya untuk 50 orang pertama, untuk Breakfast sebesar 25%</p>
+					<p class="read-more">
+						<a href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="grup-food">
+		<h1>What kind of Food we serve for you</h1>
+		<p>Healthy food with the best ingredients</p>
+		<ul>
+			<li class="active"><a data-toggle="tab" href="#home">All</a></li>
+			<li><a data-toggle="tab" href="#menu1">Breakfast</a></li>
+			<li><a data-toggle="tab" href="#menu2">Special</a></li>
+			<li><a data-toggle="tab" href="#menu3">Desert</a></li>
+			<li><a data-toggle="tab" href="#menu4">Dinner</a></li>
+		</ul>
+
+		<div class="tab-content">
+			<div id="home" class="tab-pane fade in active">
+				<section id="photos">
+					<div class="image-hover-menu">
+						<div class="bg-color-menu"></div>
+						<div class="grup-menu-hover">
+							<h3>Sayur Koll</h3>
+							<p>Rp 30.000,-</p>
+							<a href="#!">Pesan</a>
+						</div>
+						<img id="hover-menu-food" src="https://www.bbcgoodfood.com/sites/default/files/styles/category_retina/public/recipe-collections/collection-image/2017/02/healthy-salmon-collection-main-image.jpg?itok=X-vgckbl" alt="">
+					</div>
+					<div class="image-hover-menu">
+						<div class="bg-color-menu"></div>
+						<div class="grup-menu-hover">
+							<h3>Sayur Koll</h3>
+							<p>Rp 30.000,-</p>
+							<a href="#!">Pesan</a>
+						</div>
+						<img src="https://therecipecritic.com/wp-content/uploads/2017/01/2-400x600.jpg" alt="">
+					</div>
+					<div class="image-hover-menu">
+						<div class="bg-color-menu"></div>
+						<div class="grup-menu-hover">
+							<h3>Sayur Koll</h3>
+							<p>Rp 30.000,-</p>
+							<a href="#!">Pesan</a>
+						</div>
+						<img src="https://cook.fnr.sndimg.com/content/dam/images/cook/fullset/2012/1/4/0/CCHGL_Hungry-Mac-Bella-Stack-Burger_s4x3.jpg.rend.hgtvcom.966.725.suffix/1368542234684.jpeg" alt="">
+					</div>
+					<div class="image-hover-menu">
+						<div class="bg-color-menu"></div>
+						<div class="grup-menu-hover">
+							<h3>Sayur Koll</h3>
+							<p>Rp 30.000,-</p>
+							<a href="#!">Pesan</a>
+						</div>
+						<img src="https://abeautifulmess.typepad.com/.a/6a00d8358081ff69e2017d3f869848970c-800wi" alt="">
+					</div>
+					<div class="image-hover-menu">
+						<div class="bg-color-menu"></div>
+						<div class="grup-menu-hover">
+							<h3>Sayur Koll</h3>
+							<p>Rp 30.000,-</p>
+							<a href="#!">Pesan</a>
+						</div>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMMQyVvSthkVjlJXlBXLsaLG4XZHwqx4glRmaM8L1NakraNQEolQ" alt="">
+					</div>
+					<div class="image-hover-menu">
+						<div class="bg-color-menu"></div>
+						<div class="grup-menu-hover">
+							<h3>Sayur Koll</h3>
+							<p>Rp 30.000,-</p>
+							<a href="#!">Pesan</a>
+						</div>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHw1cy-26nob8gURHk6duEatsXrRWw_n88tHFmcTA0fCebueJn" alt="">
+					</div>
+					<div class="image-hover-menu">
+						<div class="bg-color-menu"></div>
+						<div class="grup-menu-hover">
+							<h3>Sayur Koll</h3>
+							<p>Rp 30.000,-</p>
+							<a href="#!">Pesan</a>
+						</div>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX8mh63vX6WYOW5FBbLWiSVJyTCd7OBvOcWtQkluRTKCuO9D-yhA" alt="">
+					</div>
+<!-- 					<img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2012/10/26/0/FNK_Healthy-Marbled-Banana-Bread_s4x3.jpg.rend.hgtvcom.966.725.suffix/1382541976528.jpeg" alt="">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfm7L9mYl8l7etLjQakjSS2dmP8XR1k1c7gjZyCcRT9ByKEbdG" alt="">
+					<img src="https://hips.hearstapps.com/del.h-cdn.co/assets/17/51/1600x800/landscape-1513895273-delish-greek-stuffed-chicken-3.jpg?resize=480:*" alt="">
+					<img src="https://www.bbcgoodfood.com/sites/default/files/styles/category_retina/public/recipe-collections/collection-image/2016/11/healthy-casserole-stew-collection.jpg?itok=CvUxCE-P" alt="">
+					<img src="https://cook.fnr.sndimg.com/content/dam/images/cook/fullset/2012/1/4/0/CCHGL_Hungry-Mac-Bella-Stack-Burger_s4x3.jpg.rend.hgtvcom.966.725.suffix/1368542234684.jpeg" alt=""> -->
+				</section>
+			</div>
+			<div id="menu1" class="tab-pane fade">
+				<section id="photos">
+					<div class="image-hover-menu">
+						<div class="bg-color-menu"></div>
+						<div class="grup-menu-hover">
+							<h3>Sayur Koll</h3>
+							<p>Rp 30.000,-</p>
+							<a href="#!">Pesan</a>
+						</div>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHw1cy-26nob8gURHk6duEatsXrRWw_n88tHFmcTA0fCebueJn" alt="">
+					</div>
+					<div class="image-hover-menu">
+						<div class="bg-color-menu"></div>
+						<div class="grup-menu-hover">
+							<h3>Sayur Koll</h3>
+							<p>Rp 30.000,-</p>
+							<a href="#!">Pesan</a>
+						</div>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX8mh63vX6WYOW5FBbLWiSVJyTCd7OBvOcWtQkluRTKCuO9D-yhA" alt="">
+					</div>
+					<div class="image-hover-menu">
+						<div class="bg-color-menu"></div>
+						<div class="grup-menu-hover">
+							<h3>Sayur Koll</h3>
+							<p>Rp 30.000,-</p>
+							<a href="#!">Pesan</a>
+						</div>
+						<img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2012/10/26/0/FNK_Healthy-Marbled-Banana-Bread_s4x3.jpg.rend.hgtvcom.966.725.suffix/1382541976528.jpeg" alt="">
+					</div>
+				</section>
+			</div>
+			<div id="menu2" class="tab-pane fade">
+				<section id="photos">
+					<div class="image-hover-menu">
+						<div class="bg-color-menu"></div>
+						<div class="grup-menu-hover">
+							<h3>Sayur Koll</h3>
+							<p>Rp 30.000,-</p>
+							<a href="#!">Pesan</a>
+						</div>
+						<img src="https://abeautifulmess.typepad.com/.a/6a00d8358081ff69e2017d3f869848970c-800wi" alt="">
+					</div>
+					<div class="image-hover-menu">
+						<div class="bg-color-menu"></div>
+						<div class="grup-menu-hover">
+							<h3>Sayur Koll</h3>
+							<p>Rp 30.000,-</p>
+							<a href="#!">Pesan</a>
+						</div>
+						<img src="https://www.bbcgoodfood.com/sites/default/files/styles/category_retina/public/recipe-collections/collection-image/2016/11/healthy-casserole-stew-collection.jpg?itok=CvUxCE-P" alt="">
+					</div>
+					<div class="image-hover-menu">
+						<div class="bg-color-menu"></div>
+						<div class="grup-menu-hover">
+							<h3>Sayur Koll</h3>
+							<p>Rp 30.000,-</p>
+							<a href="#!">Pesan</a>
+						</div>
+						<img src="https://cook.fnr.sndimg.com/content/dam/images/cook/fullset/2012/1/4/0/CCHGL_Hungry-Mac-Bella-Stack-Burger_s4x3.jpg.rend.hgtvcom.966.725.suffix/1368542234684.jpeg" alt="">
+					</div>
+				</section>
+			</div>
+			<div id="menu3" class="tab-pane fade">
+				<section id="photos">
+					<div class="image-hover-menu">
+						<div class="bg-color-menu"></div>
+						<div class="grup-menu-hover">
+							<h3>Sayur Koll</h3>
+							<p>Rp 30.000,-</p>
+							<a href="#!">Pesan</a>
+						</div>
+						<img src="https://abeautifulmess.typepad.com/.a/6a00d8358081ff69e2017d3f869848970c-800wi" alt="">
+					</div>
+					<div class="image-hover-menu">
+						<div class="bg-color-menu"></div>
+						<div class="grup-menu-hover">
+							<h3>Sayur Koll</h3>
+							<p>Rp 30.000,-</p>
+							<a href="#!">Pesan</a>
+						</div>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMMQyVvSthkVjlJXlBXLsaLG4XZHwqx4glRmaM8L1NakraNQEolQ" alt="">
+					</div>
+					<div class="image-hover-menu">
+						<div class="bg-color-menu"></div>
+						<div class="grup-menu-hover">
+							<h3>Sayur Koll</h3>
+							<p>Rp 30.000,-</p>
+							<a href="#!">Pesan</a>
+						</div>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMMQyVvSthkVjlJXlBXLsaLG4XZHwqx4glRmaM8L1NakraNQEolQ" alt="">
+					</div>
+				</section>
+			</div>
+			<div id="menu4" class="tab-pane fade">
+				<section id="photos">
+					<div class="image-hover-menu">
+						<div class="bg-color-menu"></div>
+						<div class="grup-menu-hover">
+							<h3>Sayur Koll</h3>
+							<p>Rp 30.000,-</p>
+							<a href="#!">Pesan</a>
+						</div>
+						<img src="https://hips.hearstapps.com/del.h-cdn.co/assets/17/51/1600x800/landscape-1513895273-delish-greek-stuffed-chicken-3.jpg?resize=480:*" alt="">
+					</div>
+					<div class="image-hover-menu">
+						<div class="bg-color-menu"></div>
+						<div class="grup-menu-hover">
+							<h3>Sayur Koll</h3>
+							<p>Rp 30.000,-</p>
+							<a href="#!">Pesan</a>
+						</div>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMMQyVvSthkVjlJXlBXLsaLG4XZHwqx4glRmaM8L1NakraNQEolQ" alt="">
+					</div>
+					<div class="image-hover-menu">
+						<div class="bg-color-menu"></div>
+						<div class="grup-menu-hover">
+							<h3>Sayur Koll</h3>
+							<p>Rp 30.000,-</p>
+							<a href="#!">Pesan</a>
+						</div>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX8mh63vX6WYOW5FBbLWiSVJyTCd7OBvOcWtQkluRTKCuO9D-yhA" alt="">
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="contact-me">
+	<div class="grup-contact">
+		<div class="col-sm-12 col-md-4">
+			<h3>Healthy <i class="fa fa-spoon" aria-hidden="true"></i>ooD Resto</h3>
+			<table>
+				<tr>
+					<td>Senin - Rabu</td>
+					<td>08.00 - 21.00</td>
+				</tr>
+				<tr>
+					<td>Kamis - Sabtu</td>
+					<td>19.00 - 23.59</td>
+				</tr>
+				<tr>
+					<td>Minggu</td>
+					<td>Tutup</td>
+				</tr>
+			</table>
+		</div>
+		<div class="col-sm-12 col-md-4">
+			<h3>Contact Us</h3>
+			<table>
+				<tr style="border: none;">
+					<td style="text-align: left;">Untuk Keluahan atau apapaun bisa menghubungi</td>
+				</tr>
+				<tr style="border: none;">
+					<td style="text-align: left;color: #fff;font-size: 24px;font-weight: 600;line-height: 30px;padding-top: 0;">082-838-293-293</td>
+				</tr>
+			</table>
+		</div>
+		<div class="col-sm-12 col-md-4">
+			<h3>Follow Us</h3>
+			<table style="width: 100%;margin-top: 42px;">
+				<tr style="border: none;">
+					<td><a href="#!"><i style="color: white;font-size: 32px;" class="fa fa-facebook-official" aria-hidden="true"></i></a></td>
+					<td><a href="#!"><i style="color: white;font-size: 32px;" class="fa fa-instagram" aria-hidden="true"></i></a></td>
+					<td><a href="#!"><i style="color: white;font-size: 32px;" class="fa fa-twitter" aria-hidden="true"></i></a></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="grup-all-footer">
+		<div class="col-sm-12 col-md-6">
+			<h4>Copyright ©2018</h4>
+		</div>
+		<div class="col-sm-12 col-md-6">
+			<h4>We ❤ Healthy</h4>
+		</div>
+	</div>
+</footer>
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+
+	$(document).ready(function(){
+		$(window).bind('scroll', function() {
+			var navHeight = $( window ).height() - 70;
+			if ($(window).scrollTop() > navHeight) {
+				$('.navbar-default').addClass('fixed');
+				$('.grup-navbar-side').addClass('fixed-nav');
+			}
+			else {
+				$('.navbar-default').removeClass('fixed');
+				$('.grup-navbar-side').removeClass('fixed-nav');
+			}
+		});
+	});
+
+	$('#over-bc').click(function () {
+		$('#mySidenav').css({
+			'width':'0'
+		});
+		$(this).removeClass("bacground-all-over");
+	});
+
+	function openNav() {
+			// document.getElementById("mySidenav").style.width = "250px";
+			// document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+			var x = document.getElementById("mySidenav");
+			if (x.style.width === "250px") {
+				document.getElementById("mySidenav").style.width = "0";
+				document.body.style.backgroundColor = "white";
+				document.getElementById("over-bc").classList.remove("bacground-all-over");
+			} else {
+				document.getElementById("mySidenav").style.width = "250px";
+				document.getElementById("over-bc").classList.add("bacground-all-over");
+				// document.getElementById("bacground-all-over").style.position = "absolute";
+				// document.getElementById("bacground-all-over").style.top = "0";
+				// document.getElementById("bacground-all-over").style.bottom = "0";
+				// document.getElementById("bacground-all-over").style.left = "0";
+				// document.getElementById("bacground-all-over").style.right = "0";
+				// document.getElementById("bacground-all-over").style.backgroundColor = "rgba(0, 0, 0, 0.4)";
+				// document.getElementById("bacground-all-over").style.zIndex = "1";
+			}
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+			document.body.style.backgroundColor = "white";
+			document.getElementById("over-bc").classList.remove("bacground-all-over");
+		}
+	</script>
+</body>
+</html>
