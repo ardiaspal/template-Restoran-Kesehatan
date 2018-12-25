@@ -1195,10 +1195,28 @@ html, body{
  	letter-spacing: 1px;
  	float: right;
  }
+ .detail-single{
+ 	margin-top: 15px;
+ 	display: inline-block;
+ 	width: 100%;
+ }
+ .image-single-artikel{
+ 	position: relative;
+ }
+ .image-single-artikel h3{
+ 	position: absolute;
+ 	top: 50%;
+ 	left: 50%;
+ 	transform: translate(-50%,-50%);
+ 	background-color: white;
+ 	padding: 30px;
+ 	text-transform: uppercase;
+ 	color: #f42f2c;
+ }
  .grup-single-artikel{
  	display: inline-block;
  	width: 100%;
- 	padding: 5% 13%;
+ 	padding: 5% 22%;
  	padding-bottom: 1%;
  }
  .grup-color-single{
@@ -1225,6 +1243,27 @@ html, body{
  	font-family: "Poppins", sans-serif;
  	letter-spacing: 1px;
  }
+ .image-paralax-single{
+ 	background-image: url('../images/lodeh.jpg');
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+ 	background-attachment: fixed;
+ 	height: 300px;
+ }
+ @media (max-width: 768px){
+ 	.grup-single-artikel {
+ 		display: inline-block;
+ 		width: 100%;
+ 		padding: 5% 10%;
+ 		padding-bottom: 1%;
+ 	}
+ }
+ @media (max-width: 659px){
+ 	.image-single-artikel h3 {
+ 		font-size: 17px;
+ 		padding: 15px;
+ 	}
+ }
  @media (max-width: 375px){
  	.grup-text-head h6{
  		max-width: 70%;
@@ -1247,9 +1286,9 @@ html, body{
  		text-align: center;
  	}
  }
-@media (max-width: 537px){
-	.grup-color-single h1{
-		display: none;
-	}
-}
+ @media (max-width: 537px){
+ 	.grup-color-single h1{
+ 		display: none;
+ 	}
+ }
 /* end single artikel */
